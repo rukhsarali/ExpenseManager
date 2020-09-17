@@ -1,0 +1,22 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - DLRadioButton (1.4.12)
+
+DEPENDENCIES:
+  - Charts
+  - DLRadioButton
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - DLRadioButton
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+
+PODFILE CHECKSUM: 5b39901a3df18e572746c06c0e39c71df4a87ad4
+
+COCOAPODS: 1.9.3

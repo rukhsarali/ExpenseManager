@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7020CB6A551F43DD7EB4113B /* Pods_Expense_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5230B9899683B4DAA78DE2E7 /* Pods_Expense_Manager.framework */; };
+		9039BF31250F6804002F1830 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039BF30250F6804002F1830 /* ReportsViewController.swift */; };
+		9039BF33250F7C81002F1830 /* UIButtonUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039BF32250F7C81002F1830 /* UIButtonUpdate.swift */; };
 		903C914A250D1BDC0053EF70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9149250D1BDC0053EF70 /* AppDelegate.swift */; };
 		903C914C250D1BDC0053EF70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C914B250D1BDC0053EF70 /* SceneDelegate.swift */; };
 		903C914E250D1BDC0053EF70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C914D250D1BDC0053EF70 /* ViewController.swift */; };
 		903C9151250D1BDC0053EF70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C914F250D1BDC0053EF70 /* Main.storyboard */; };
 		903C9153250D1BE40053EF70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903C9152250D1BE40053EF70 /* Assets.xcassets */; };
 		903C9156250D1BE40053EF70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903C9154250D1BE40053EF70 /* LaunchScreen.storyboard */; };
+		903C915E250D53A90053EF70 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C915D250D53A90053EF70 /* SettingsViewController.swift */; };
+		903F07E72512967600C0517E /* IncomeCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F07E62512967600C0517E /* IncomeCategoryViewController.swift */; };
+		903F07E925129ED400C0517E /* ExpenseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F07E825129ED400C0517E /* ExpenseCategoryViewController.swift */; };
+		9070B618250EB0E600E0FDB6 /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070B617250EB0E600E0FDB6 /* AddIncomeViewController.swift */; };
+		9070B61A250EB9BB00E0FDB6 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070B619250EB9BB00E0FDB6 /* AddExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5230B9899683B4DAA78DE2E7 /* Pods_Expense_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expense_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9039BF30250F6804002F1830 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		9039BF32250F7C81002F1830 /* UIButtonUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonUpdate.swift; sourceTree = "<group>"; };
 		903C9146250D1BDC0053EF70 /* Expense Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		903C9149250D1BDC0053EF70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		903C914B250D1BDC0053EF70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,13 @@
 		903C9152250D1BE40053EF70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903C9155250D1BE40053EF70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903C9157250D1BE40053EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903C915D250D53A90053EF70 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		903F07E62512967600C0517E /* IncomeCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCategoryViewController.swift; sourceTree = "<group>"; };
+		903F07E825129ED400C0517E /* ExpenseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryViewController.swift; sourceTree = "<group>"; };
+		9070B617250EB0E600E0FDB6 /* AddIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
+		9070B619250EB9BB00E0FDB6 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		AD95AA0D53DE402A04BD0A90 /* Pods-Expense Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expense Manager.debug.xcconfig"; path = "Target Support Files/Pods-Expense Manager/Pods-Expense Manager.debug.xcconfig"; sourceTree = "<group>"; };
+		C4ACCB8C388AE6D0306DBA28 /* Pods-Expense Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expense Manager.release.xcconfig"; path = "Target Support Files/Pods-Expense Manager/Pods-Expense Manager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020CB6A551F43DD7EB4113B /* Pods_Expense_Manager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B6A5D1EA2E35CCB79672790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD95AA0D53DE402A04BD0A90 /* Pods-Expense Manager.debug.xcconfig */,
+				C4ACCB8C388AE6D0306DBA28 /* Pods-Expense Manager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63F4BA25BD344F0C0996E799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5230B9899683B4DAA78DE2E7 /* Pods_Expense_Manager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9039BF34250F7C8C002F1830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9039BF32250F7C81002F1830 /* UIButtonUpdate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		903C913D250D1BDC0053EF70 = {
 			isa = PBXGroup;
 			children = (
 				903C9148250D1BDC0053EF70 /* Expense Manager */,
 				903C9147250D1BDC0053EF70 /* Products */,
+				5B6A5D1EA2E35CCB79672790 /* Pods */,
+				63F4BA25BD344F0C0996E799 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +104,36 @@
 			children = (
 				903C9149250D1BDC0053EF70 /* AppDelegate.swift */,
 				903C914B250D1BDC0053EF70 /* SceneDelegate.swift */,
-				903C914D250D1BDC0053EF70 /* ViewController.swift */,
-				903C914F250D1BDC0053EF70 /* Main.storyboard */,
+				9039BF34250F7C8C002F1830 /* Model */,
+				903C9160250D53C80053EF70 /* Views */,
+				903C915F250D53BD0053EF70 /* Controllers */,
 				903C9152250D1BE40053EF70 /* Assets.xcassets */,
 				903C9154250D1BE40053EF70 /* LaunchScreen.storyboard */,
 				903C9157250D1BE40053EF70 /* Info.plist */,
 			);
 			path = "Expense Manager";
+			sourceTree = "<group>";
+		};
+		903C915F250D53BD0053EF70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				903C914D250D1BDC0053EF70 /* ViewController.swift */,
+				9070B617250EB0E600E0FDB6 /* AddIncomeViewController.swift */,
+				903F07E62512967600C0517E /* IncomeCategoryViewController.swift */,
+				9070B619250EB9BB00E0FDB6 /* AddExpenseViewController.swift */,
+				903F07E825129ED400C0517E /* ExpenseCategoryViewController.swift */,
+				903C915D250D53A90053EF70 /* SettingsViewController.swift */,
+				9039BF30250F6804002F1830 /* ReportsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		903C9160250D53C80053EF70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				903C914F250D1BDC0053EF70 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 903C915A250D1BE40053EF70 /* Build configuration list for PBXNativeTarget "Expense Manager" */;
 			buildPhases = (
+				269F0C5E17007EBFB6C33ED5 /* [CP] Check Pods Manifest.lock */,
 				903C9142250D1BDC0053EF70 /* Sources */,
 				903C9143250D1BDC0053EF70 /* Frameworks */,
 				903C9144250D1BDC0053EF70 /* Resources */,
+				3F78B342FCEEE18CB19643D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +204,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		269F0C5E17007EBFB6C33ED5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Expense Manager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F78B342FCEEE18CB19643D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expense Manager/Pods-Expense Manager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expense Manager/Pods-Expense Manager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expense Manager/Pods-Expense Manager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		903C9142250D1BDC0053EF70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9039BF31250F6804002F1830 /* ReportsViewController.swift in Sources */,
+				9070B618250EB0E600E0FDB6 /* AddIncomeViewController.swift in Sources */,
+				9070B61A250EB9BB00E0FDB6 /* AddExpenseViewController.swift in Sources */,
+				9039BF33250F7C81002F1830 /* UIButtonUpdate.swift in Sources */,
 				903C914E250D1BDC0053EF70 /* ViewController.swift in Sources */,
+				903F07E72512967600C0517E /* IncomeCategoryViewController.swift in Sources */,
 				903C914A250D1BDC0053EF70 /* AppDelegate.swift in Sources */,
 				903C914C250D1BDC0053EF70 /* SceneDelegate.swift in Sources */,
+				903C915E250D53A90053EF70 /* SettingsViewController.swift in Sources */,
+				903F07E925129ED400C0517E /* ExpenseCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +402,11 @@
 		};
 		903C915B250D1BE40053EF70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD95AA0D53DE402A04BD0A90 /* Pods-Expense Manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93SU3LG259;
 				INFOPLIST_FILE = "Expense Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +421,11 @@
 		};
 		903C915C250D1BE40053EF70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4ACCB8C388AE6D0306DBA28 /* Pods-Expense Manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93SU3LG259;
 				INFOPLIST_FILE = "Expense Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
