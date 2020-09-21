@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 struct UIButtonUpdate {
+    //MARK: - update ui button in viewcontroller
     func buttonUI (color : UIColor , BtnImage : UIImageView , BtnView : UIView) {
         let incomeImage =   BtnImage.image?.withRenderingMode(.alwaysTemplate)
         BtnImage.image = incomeImage

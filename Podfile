@@ -7,4 +7,6 @@ target 'Expense Manager' do
   # Pods for Expense Manager
     pod 'Charts'
     pod 'DLRadioButton'
+    pod 'IQKeyboardManagerSwift'
+    pod 'RealmSwift'
 end

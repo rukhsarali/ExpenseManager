@@ -42,19 +42,7 @@ extension IncomeCategoryViewController {
         categoryView.layer.cornerRadius = 8
         saveBtnView.layer.cornerRadius = 8
         cancelBtnView.layer.cornerRadius = 8
-        categoryLabelView.round(corners: [.topRight , .topLeft], cornerRadius: 8)
-    }
-}
-//MARK: - for custom corner raduis change method
-extension UIView {
-    func round(corners: UIRectCorner, cornerRadius: Double) {
-        
-        let size = CGSize(width: cornerRadius, height: cornerRadius)
-        let bezierPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: size)
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.frame = self.bounds
-        shapeLayer.path = bezierPath.cgPath
-        self.layer.mask = shapeLayer
+        categoryLabelView.roundCorners(corners: [.topRight , .topLeft], cornerRadius: 8)
     }
 }
 //MARK: - tableView methods
@@ -65,6 +53,7 @@ extension IncomeCategoryViewController : UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = categoryItems[indexPath.row]
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

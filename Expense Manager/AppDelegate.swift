@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift
+import RealmSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval : 1) //time increase for lauchScreen
         // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+              
+               do {
+                   _ = try Realm()      // let realm = try Realm()
+               }catch{
+                   print("Error init new realm")
+               }
+               
         return true
     }
 

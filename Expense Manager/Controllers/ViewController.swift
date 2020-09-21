@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import RealmSwift
 class ViewController: UIViewController {
     // add income
     @IBOutlet weak var incomebtnView: UIView!
@@ -23,24 +24,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var reportbtnImage: UIImageView!
     //pic chart
     @IBOutlet weak var pieChartView: PieChartView!
-    var iosDataEntry = PieChartDataEntry(value: 0)
-    var macDataEntry = PieChartDataEntry(value: 0)
+    
+    @IBOutlet weak var pieIncome: UILabel!
+    @IBOutlet weak var pieExpence: UILabel!
+    @IBOutlet weak var pieBalance: UILabel!
+    
+    var incomeDataEntry = PieChartDataEntry(value: 0)
+    var expenceDataEntry = PieChartDataEntry(value: 0)
     var numberOfDownloadDataEntries = [PieChartDataEntry]()
     var uiButtonUpdate = UIButtonUpdate()
+    let realm = try! Realm()
+    var RealmRecData : Results<RealmDataSave>?
     override func viewDidLoad() {
         super.viewDidLoad()
         customNavigationBarButton()
         buttonUIUpdate()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
         updateChar()
+        UpDatePieLabels()
     }
 }
 //MARK: - All buttons in viewController
 extension ViewController {
     @IBAction func addIncomeButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToAddIncome", sender: self)
+        performSegue(withIdentifier: "goToAddIncomeExpence", sender: self)
     }
     @IBAction func addExpenseButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToAddExpense", sender: self)
+        performSegue(withIdentifier: "goToAddIncomeExpence", sender: self)
     }
     @IBAction func allTransactionButton(_ sender: UIButton) {
         performSegue(withIdentifier: "goToAllTransaction", sender: self)
@@ -61,17 +73,26 @@ extension ViewController {
 //MARK: - chart view setting
 extension ViewController {
     func updateChar() {
-        iosDataEntry.value = 40
-        macDataEntry.value = 60
-        numberOfDownloadDataEntries = [iosDataEntry , macDataEntry]
+        let totalSumOfIncome: Int = realm.objects(RealmDataSave.self).sum(ofProperty: "incomeamountRealm")
+        let totalSumOfExpence: Int = realm.objects(RealmDataSave.self).sum(ofProperty: "expenceamountRealm")
+        incomeDataEntry.value = Double(totalSumOfIncome)
+        expenceDataEntry.value = Double(totalSumOfExpence)
+        numberOfDownloadDataEntries = [incomeDataEntry , expenceDataEntry]
         pieChartView.holeRadiusPercent = 0.3
-        pieChartView.centerText = "center is here"
+        pieChartView.centerText = "center"
         pieChartView.transparentCircleRadiusPercent = 0.4
         pieChartView.centerTextRadiusPercent = 1.1
         let chartDataSet = PieChartDataSet(entries: numberOfDownloadDataEntries, label: nil)
         let chartData = PieChartData(dataSet: chartDataSet)
-        chartDataSet.colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1) , #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)]
+        chartDataSet.colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1) , #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)] 
         pieChartView.data = chartData
+    }
+    func UpDatePieLabels() {
+        let totalSumOfIncome: Int = realm.objects(RealmDataSave.self).sum(ofProperty: "incomeamountRealm")
+        let totalSumOfExpence: Int = realm.objects(RealmDataSave.self).sum(ofProperty: "expenceamountRealm")
+        pieIncome.text = "\(totalSumOfIncome)"
+        pieExpence.text = "\(totalSumOfExpence)"
+        pieBalance.text = "\(totalSumOfIncome + totalSumOfExpence)"
     }
 }
 //MARK: - navigation bar button setting
